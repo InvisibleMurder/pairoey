@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const message = document.getElementById('message');
     const passwordInput = document.getElementById('password');
     const usernameInput = document.getElementById('username'); // เพิ่มสำหรับ Username input
-    const body = document.body; // อ้างอิงถึง body เพื่อเปลี่ยนสีพื้นหลัง
+    const body = document.body; // อ้างอิงถึง bodyเพื่อเปลี่ยนสีพื้นหลัง
 
     let clickCount = 0; // ตัวแปรสำหรับนับจำนวนครั้งที่กด
     const prankMessages = [
