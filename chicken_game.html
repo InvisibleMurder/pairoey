@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Chicken Game</h1>
+        <div class="stats">
+            <div class="stat-item">
+                <span class="label">Time Left:</span>
+                <span id="timer">20:00</span>
+            </div>
+            <div class="stat-item">
+                <span class="label">Money:</span>
+                <span id="money">$0</span>
+            </div>
+        </div>
+        
+        <div class="chicken-area">
+            <img id="chicken-image" src="http://googleusercontent.com/generated_image_content/0" alt="A cute chicken">
+            <p id="status-message">Your chicken is happy!</p>
+        </div>
+
+        <div class="controls">
+            <div class="item">
+                <p>Grain Bag ($20)</p>
+                <button id="buy-grain">Buy</button>
+            </div>
+            <div class="item">
+                <button id="feed-chicken">Feed</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="chicken_game.js"></script>
+</body>
+</html>
