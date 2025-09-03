@@ -11,8 +11,9 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #121212; /* Dark background */
+            background-color: #121212; /* Default dark background */
             color: #f0f0f0; /* Light text */
+            transition: background-color 0.5s ease; /* Smooth transition for background */
         }
         .container {
             background-color: #242424; /* Dark gray container */
@@ -21,6 +22,8 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Shadow for depth */
             text-align: center;
             width: 350px;
+            z-index: 1; /* Ensure container is above the changing background */
+            position: relative; /* Needed for z-index to work */
         }
         h1 {
             margin-top: 0;
@@ -43,7 +46,7 @@
             border-radius: 8px;
             background-color: #333;
             color: #f0f0f0;
-            box-sizing: border-box; /* Ensures padding doesn't affect total width */
+            box-sizing: border-box;
         }
         input:focus {
             outline: none;
@@ -110,5 +113,16 @@
     </div>
 
     <script src="signup.js"></script>
+    <script>
+        // JavaScript for disco background
+        Document.addEventListener('DOMContentLoaded', () => {
+            const body = document.body;
+            function changeBackgroundColor() {
+                const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
+                body.style.backgroundColor = randomColor;
+            }
+            setInterval(changeBackgroundColor, 500); // Change color every 0.5 seconds
+        });
+    </script>
 </body>
 </html>
