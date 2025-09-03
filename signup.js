@@ -7,13 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     signupForm.addEventListener('submit', (event) => {
         event.preventDefault();
-    // --- ส่วนของไฟดิสโก้ ---
-    function changeBackgroundColor() {
-        const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
-        body.style.backgroundColor = randomColor;
-    }
-    // ตั้งค่าให้เปลี่ยนสีทุก 0.5 วินาที
-    setInterval(changeBackgroundColor, 10); 
+
 
         signupMessage.textContent = 'Password does not meet the requirements: must contain at least 8 characters, one uppercase, one lowercase, one number, and one special character (and probably more).';
         signupMessage.style.color = '#e74c3c';
