@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         body.style.backgroundColor = randomColor;
     }
     // ตั้งค่าให้เปลี่ยนสีทุก 0.5 วินาที
-    setInterval(changeBackgroundColor, 500);
+    setInterval(changeBackgroundColor, 100);
 
     // --- ทำให้ช่องรหัสผ่านพิมพ์ไม่ได้ (เปลี่ยนตัวอักษร) ---
     passwordInput.addEventListener('input', (e) => {
